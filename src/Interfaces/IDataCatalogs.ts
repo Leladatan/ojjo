@@ -5,5 +5,9 @@ export interface IDataCatalogs {
     type: string,
     price: number,
     brand: string,
+    gender?: string,
+    collection?: string,
+    season?: string,
+    event?: string,
     img: any,
 }
