@@ -4,9 +4,14 @@
   background-size: cover;
   background-position: top;
   height: 90vh;
+  position: relative;
 }
 
 .first-screen__content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding-top: 14rem;
   display: flex;
   flex-direction: column;
