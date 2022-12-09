@@ -38,4 +38,22 @@ ul, ol {
   list-style: none;
 }
 
+::selection {
+  background: #D6D6D6;
+}
+
+body::-webkit-scrollbar {
+  width: 0.45rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #D6D6D6;
+  border-radius: 1rem;
+  border: 2px solid #333333;
+}
+
 /*# sourceMappingURL=index.css.map */
