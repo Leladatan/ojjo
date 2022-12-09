@@ -1,0 +1,41 @@
+.header {
+  padding: 1rem 0;
+  background-color: #333;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.header__logo_svg {
+  display: block;
+}
+
+.register span {
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/*# sourceMappingURL=index.css.map */

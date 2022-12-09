@@ -1,0 +1,25 @@
+.header {
+  padding: 1rem 0;
+  background-color: #333;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.header__logo_svg {
+  display: block;
+}
+
+.navbar__list_link {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar__list_link__active {
+  color: lightgrey;
+}
+
+/*# sourceMappingURL=header.css.map */

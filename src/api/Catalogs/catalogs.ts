@@ -1,0 +1,58 @@
+import {IDataCatalogs} from "../../types/IDataCatalogs";
+
+export const dataCatalogs: IDataCatalogs[] = [
+    {
+        id: 1,
+        title: "Подвеска DOLCE & GABBARA",
+        description: "",
+        type: "Подвески",
+        price: 200000,
+        brand: "DOLCE & GABBARA",
+        img: "",
+    },
+    {
+        id: 2,
+        title: "",
+        description: "",
+        type: "Кольца",
+        price: 100,
+        brand: "",
+        img: "",
+    },
+    {
+        id: 3,
+        title: "Серьги",
+        description: "",
+        type: "",
+        price: 100,
+        brand: "",
+        img: "",
+    },
+    {
+        id: 4,
+        title: "",
+        description: "",
+        type: "Запонки",
+        price: 100,
+        brand: "",
+        img: "",
+    },
+    {
+        id: 5,
+        title: "",
+        description: "",
+        type: "Браслеты",
+        price: 100,
+        brand: "",
+        img: "",
+    },
+    {
+        id: 6,
+        title: "",
+        description: "",
+        type: "Часы",
+        price: 100,
+        brand: "",
+        img: "",
+    },
+]
