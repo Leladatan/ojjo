@@ -11,7 +11,6 @@ const ProductPage: FC = ({}) => {
 
     useEffect(() => {
         const urlId = Number(url.pathname.slice(9));
-        console.log(urlId)
         const current = dataCatalogs[urlId - 1];
         setItem(current);
     }, []);
@@ -24,9 +23,27 @@ const ProductPage: FC = ({}) => {
                         <div className="main__content">
                             <div className="product-page">
                                 <div className="product-page__img">
-                                    <img className="product-page_img" src="" alt=""/>
+                                    <img className="product-page_img" src={item.img} alt="img"/>
                                 </div>
-                                .
+                                <div className="product-page__content">
+                                    <h2>
+                                        {item.title}
+                                    </h2>
+                                    <span>
+                                        Категория: {item.type}
+                                    </span>
+                                    <br/>
+                                    <span>
+                                        Бренд: {item.brand}
+                                    </span>
+                                    <p>
+                                        {item.description}
+                                    </p>
+                                    <span>
+                                        {item.price} ₽
+                                    </span>
+
+                                </div>
                             </div>
                         </div>
                     </div>
