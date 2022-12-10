@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import "../../Styles/searcgCatalog.scss"
+import "../../Styles/searchCatalog.scss"
 
 interface Props {
     search: string;
