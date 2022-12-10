@@ -5,6 +5,7 @@ import HomePage from "./Pages/HomePage/HomePage";
 import NotFound from "./Pages/NotFound/NotFound";
 import CatalogPage from "./Pages/CatalogPage/CatalogPage";
 import ProductPage from "./Pages/ProductPage/ProductPage";
+import ContactsPage from "./Pages/ContactsPage/ContactsPage";
 
 const App: FC = ({}) => {
     return (
@@ -27,6 +28,12 @@ const App: FC = ({}) => {
                     element={
                         <Page>
                             <ProductPage/>
+                        </Page>}/>
+                <Route
+                    path="/contacts"
+                    element={
+                        <Page>
+                            <ContactsPage/>
                         </Page>}/>
                 <Route
                     path="*"
