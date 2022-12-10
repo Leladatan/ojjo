@@ -34,8 +34,42 @@ const HomePage: FC = () => {
                                 Настоящая красота здесь!
                             </h2>
                         </div>
-                        <div className="catalogs__content__btns">
+                        <div className="catalogs__content__imgs">
+                            <div className="catalogs__card Rings">
+                                <span className="catalogs__card__text">
+                                    КОЛЬЦА
+                                </span>
+                            </div>
 
+                            <div className="catalogs__card Earrings">
+                                <span className="catalogs__card__text">
+                                    СЕРЬГИ
+                                </span>
+                            </div>
+
+                            <div className="catalogs__card Suspensions">
+                                <span className="catalogs__card__text">
+                                    ПОДВЕСКИ
+                                </span>
+                            </div>
+
+                            <div className="catalogs__card Cufflinks">
+                                <span className="catalogs__card__text">
+                                    ЗАПОНКИ
+                                </span>
+                            </div>
+
+                            <div className="catalogs__card Bracelets">
+                                <span className="catalogs__card__text">
+                                    БРАСЛЕТЫ
+                                </span>
+                            </div>
+
+                            <div className="catalogs__card Watch">
+                                <span className="catalogs__card__text">
+                                    ЧАСЫ
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>

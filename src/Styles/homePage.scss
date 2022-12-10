@@ -2,16 +2,16 @@
   background-repeat: no-repeat;
   background-image: url("../Images/HomePage/bgc.png");
   background-size: cover;
-  background-position: top;
-  height: 90vh;
+  background-position: center;
+  height: 1000px;
   position: relative;
 }
 
 .first-screen__content {
   position: absolute;
-  top:30%;
-  left:50%;
-  transform:translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding-top: 14rem;
   display: flex;
   flex-direction: column;
@@ -29,6 +29,21 @@
   text-align: center;
 }
 
+.main__title {
+  font-size: 30px;
+  color: #333;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+//subtitle
+.subtitle {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  color: #333333;
+}
+
 //link
 .first-screen__btn {
   color: #fff;
@@ -41,4 +56,98 @@
   &:hover {
     background-color: #979797;
   }
+}
+
+//catalogs
+.catalogs {
+  padding: 3rem 0;
+}
+
+.catalogs__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.catalogs__content__imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.catalogs__card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 300px;
+  width: 350px;
+  padding: 2.3rem;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0 30px 2px #979797;
+  }
+}
+
+.catalogs__card__text {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 4px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.Rings {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../Images/HomePage/Rings.png");
+}
+
+.Earrings {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../Images/HomePage/Earrings.png");
+}
+
+.Suspensions {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../Images/HomePage/Suspensions.png");
+}
+
+.Cufflinks {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../Images/HomePage/Cufflinks.png");
+}
+
+.Bracelets {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../Images/HomePage/Bracelets.png");
+}
+
+.Watch {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../Images/HomePage/Watch.png");
+}
+
+//title
+.blogs__content__title,
+.visit__content__title,
+.catalogs__content__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }

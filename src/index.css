@@ -87,6 +87,7 @@
 .footer__phone,
 .footer__mail {
   color: #333333;
+  font-family: "PT Sans", sans-serif;
 }
 .footer__phone:hover,
 .footer__mail:hover {
@@ -113,6 +114,11 @@
   border-bottom: 2px solid #333;
 }
 
+.footer__info_text,
+.footer__list_text {
+  font-family: "PT Sans", sans-serif;
+}
+
 .footer__info_link {
   color: #333333;
 }
@@ -122,6 +128,10 @@
 
 .footer__list_contacts__link {
   color: #333333;
+}
+
+.footer__info_link {
+  font-family: "PT Sans", sans-serif;
 }
 
 * {
