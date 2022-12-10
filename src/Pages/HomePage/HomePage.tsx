@@ -79,7 +79,7 @@ const HomePage: FC = () => {
                 <div className="container">
                     <div className="visit__content">
                         <div className="visit__content__title">
-                            <span className="subtitle">
+                            <span className="subtitle__visit subtitle">
                                 Не знаете, что выбрать?
                             </span>
                             <h2 className="visit__title main__title">
@@ -120,7 +120,7 @@ const HomePage: FC = () => {
 
                     </div>
                     <div className="blogs__btn">
-                        <Link to="/blogs">
+                        <Link to="/blogs" className="blogs__btn_link">
                             ЧИТАТЬ НАШ БЛОГ
                         </Link>
                     </div>
