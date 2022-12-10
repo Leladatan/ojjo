@@ -116,7 +116,29 @@ const HomePage: FC = () => {
                             </h2>
                         </div>
                         <div className="blogs__cards">
+                            <div className="blogs__card blogs-1">
+                                <span className="blogs__card__text">
+                                    Как выбрать
+                                    часы для своей
+                                    будущей жены
+                                </span>
+                            </div>
 
+                            <div className="blogs__card blogs-2">
+                                <span className="blogs__card__text">
+                                    Запонки для мужа:
+                                    7 ключевых правил
+                                    покупки аксессуара
+                                </span>
+                            </div>
+
+                            <div className="blogs__card blogs-3">
+                                <span className="blogs__card__text">
+                                    Как выбрать
+                                    обручальные кольца
+                                    молодоженам
+                                </span>
+                            </div>
                         </div>
                         <div className="blogs__btn">
                             <Link to="/blogs" className="blogs__btn_link">

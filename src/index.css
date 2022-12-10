@@ -187,4 +187,8 @@ html, body {
   flex: 1;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=index.css.map */
