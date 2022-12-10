@@ -39,7 +39,7 @@ export const dataCatalogs: IDataCatalogs[] = [
     },
     {
         id: 4,
-        title: 'Запонки "Весы"',
+        title: 'Запонки золотые "Весы"',
         description: "На этот раз мастера «Ювелирной коллекции» обратились к вечной и незыблемой классике – белое изображение на синем фоне! Встречайте запонки Весы. Серебряные весы представлены на фоне афганского лазурита. Белое на синем! \n" +
             "Материал: серебро\n" +
             "Варианты покрытия: родий\n" +
@@ -52,7 +52,7 @@ export const dataCatalogs: IDataCatalogs[] = [
         gender: "Male",
         season: "Autumn",
         event: "Holiday",
-        img: "https://www.24-karat.ru/upload/iblock/159/IMG_7620.JPG",
+        img: "https://avatars.mds.yandex.net/get-mpic/5347250/img_id5525721217349680392.jpeg/orig",
     },
     {
         id: 5,
