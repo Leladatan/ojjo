@@ -8,9 +8,6 @@ const CatalogPage: FC = ({}) => {
         <main className="main">
             <div className="container">
                 <div className="main__content">
-                    <h1 className="main__title">
-                        Catalog
-                    </h1>
                     <div className="main__content__card">
                         {dataCatalogs.map((item) => (
                             <ProductCardCatalogs item={item} key={item.id}/>
