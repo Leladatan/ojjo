@@ -115,14 +115,14 @@ const HomePage: FC = () => {
                                 Лучшие советы по подбору дорогих подарков
                             </h2>
                         </div>
-                    </div>
-                    <div className="blogs__cards">
+                        <div className="blogs__cards">
 
-                    </div>
-                    <div className="blogs__btn">
-                        <Link to="/blogs" className="blogs__btn_link">
-                            ЧИТАТЬ НАШ БЛОГ
-                        </Link>
+                        </div>
+                        <div className="blogs__btn">
+                            <Link to="/blogs" className="blogs__btn_link">
+                                ЧИТАТЬ НАШ БЛОГ
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
