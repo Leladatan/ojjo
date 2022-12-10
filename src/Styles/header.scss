@@ -20,3 +20,9 @@
   font-family: 'PT Sans', sans-serif;
   color: #fff;
 }
+
+@media screen and (max-width: 426px) {
+  .register {
+    display: none;
+  }
+}
