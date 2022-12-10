@@ -7,7 +7,7 @@ interface Props {
     item: IDataCatalogs;
 }
 
-const format = (str: string) => {
+export const format = (str: string) => {
     const s = str.length;
     const chars = str.split('');
     const strWithSpaces = chars.reduceRight((acc, char, i) => {
