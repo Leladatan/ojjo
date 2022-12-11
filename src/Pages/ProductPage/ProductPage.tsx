@@ -22,7 +22,7 @@ const ProductPage: FC = ({}) => {
             {item && (
                 <main className="main">
                     <div className="container">
-                        <div className="main__content">
+                        <div className="main__content__product">
                             <div className="product-page">
                                 <div className="product-page__img">
                                     <img className="product-page_img" src={item.img} alt="img"/>
