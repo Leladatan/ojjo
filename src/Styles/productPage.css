@@ -105,8 +105,8 @@
 
 .product__info__content {
   display: flex;
-  justify-content: center;
-  gap: 7rem;
+  justify-content: space-between;
+  gap: 4rem;
   margin: 4rem 0;
 }
 

@@ -6,6 +6,8 @@ import NotFound from "./Pages/NotFound/NotFound";
 import CatalogPage from "./Pages/CatalogPage/CatalogPage";
 import ProductPage from "./Pages/ProductPage/ProductPage";
 import ContactsPage from "./Pages/ContactsPage/ContactsPage";
+import BlogsPage from "./Pages/BlogsPage/BlogsPage";
+import BlogsIdPage from "./Pages/BlogsIdPage/BlogsIdPage";
 
 const App: FC = ({}) => {
     return (
@@ -34,6 +36,18 @@ const App: FC = ({}) => {
                     element={
                         <Page>
                             <ContactsPage/>
+                        </Page>}/>
+                <Route
+                    path="/blogs"
+                    element={
+                        <Page>
+                            <BlogsPage/>
+                        </Page>}/>
+                <Route
+                    path="/blogs/:id"
+                    element={
+                        <Page>
+                            <BlogsIdPage/>
                         </Page>}/>
                 <Route
                     path="*"

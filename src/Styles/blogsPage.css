@@ -1,0 +1,27 @@
+.blogs__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.main__content__blogs {
+  margin: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .blogs__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 426px) {
+  .blogs__card {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+/*# sourceMappingURL=blogsPage.css.map */

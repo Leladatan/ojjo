@@ -1,6 +1,8 @@
 import React, {FC} from 'react';
 import "../../Styles/homePage.scss"
 import {Link} from "react-router-dom";
+import {dataBlogs} from "../../api/Blogs/blogs";
+import BlogsCard from "../../Components/BlogsCard/BlogsCard";
 
 const HomePage: FC = () => {
     return (
@@ -116,29 +118,9 @@ const HomePage: FC = () => {
                             </h2>
                         </div>
                         <div className="blogs__cards">
-                            <div className="blogs__card blogs-1">
-                                <span className="blogs__card__text">
-                                    Как выбрать
-                                    часы для своей
-                                    будущей жены
-                                </span>
-                            </div>
-
-                            <div className="blogs__card blogs-2">
-                                <span className="blogs__card__text">
-                                    Запонки для мужа:
-                                    7 ключевых правил
-                                    покупки аксессуара
-                                </span>
-                            </div>
-
-                            <div className="blogs__card blogs-3">
-                                <span className="blogs__card__text">
-                                    Как выбрать
-                                    обручальные кольца
-                                    молодоженам
-                                </span>
-                            </div>
+                            {dataBlogs.map((item) => (
+                                <BlogsCard item={item} key={item.id}/>
+                            ))}
                         </div>
                         <div className="blogs__btn">
                             <Link to="/blogs" className="blogs__btn_link">

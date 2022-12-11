@@ -1,0 +1,27 @@
+.main__content__blogsId {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.blogsId__title {
+  font-family: "Lora", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.blogsId__text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  color: #333333;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=blogsIdPage.css.map */
