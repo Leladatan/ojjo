@@ -21,8 +21,29 @@
   color: #fff;
 }
 
+@media screen and (max-width: 769px) {
+  .header__logo_svg {
+    width: 175px;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .register {
     display: none;
+  }
+  .header__logo_svg {
+    width: 155px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .header__logo_svg {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .header__logo_svg {
+    width: 120px;
   }
 }
