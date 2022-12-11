@@ -1,8 +1,8 @@
 import React, {FC} from 'react';
-import "../../Styles/homePage.scss"
+import "@/Styles/homePage.scss"
 import {Link} from "react-router-dom";
-import {dataBlogs} from "../../api/Blogs/blogs";
-import BlogsCard from "../../Components/BlogsCard/BlogsCard";
+import {dataBlogs} from "@/api/Blogs/blogs";
+import BlogsCard from "@/Components/BlogsCard/BlogsCard";
 
 const HomePage: FC = () => {
     return (
@@ -98,9 +98,9 @@ const HomePage: FC = () => {
                             </p>
                         </div>
                         <div className="visit__content__btn">
-                            <button className="visit__btn">
+                            <Link to="/contacts" className="visit__btn">
                                 НАШИ САЛОНЫ
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
