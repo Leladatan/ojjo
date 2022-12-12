@@ -1,6 +1,7 @@
 .card {
   height: 500px;
   max-width: 300px;
+  animation: ani .5s ease-in-out;
 
   &__link {
     transition: all .3s ease-in-out;
@@ -59,4 +60,14 @@
   padding: 0.5rem 2rem;
   background-color: #333;
   font-family: 'PT Sans', sans-serif;
+}
+
+//animation
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

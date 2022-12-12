@@ -1,6 +1,7 @@
 .card {
   height: 500px;
   max-width: 300px;
+  animation: ani 0.5s ease-in-out;
 }
 .card__link {
   transition: all 0.3s ease-in-out;
@@ -54,6 +55,15 @@
   padding: 0.5rem 2rem;
   background-color: #333;
   font-family: "PT Sans", sans-serif;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=productCardCatalogs.css.map */
