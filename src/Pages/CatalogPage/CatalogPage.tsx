@@ -43,11 +43,18 @@ const CatalogPage: FC = ({}) => {
                     <SortPrice priceSort={priceSort} setPriceSort={setPriceSort}/>
                     <FilterPrice priceFilterMax={priceFilterMax} priceFilterMin={priceFilterMin}
                                  setPriceFilterMax={setPriceFilterMax} setPriceFilterMin={setPriceFilterMin}/>
-                    <div className="main__content__card">
-                        {productList.map((item) => (
-                            <ProductCardCatalogs item={item} key={item.id}/>
-                        ))}
-                    </div>
+                    {productList.length !== 0
+                        ?
+                        <div className="main__content__card">
+                            {productList.map((item) => (
+                                <ProductCardCatalogs item={item} key={item.id}/>
+                            ))}
+                        </div>
+                        :
+                        <h1 className="error__message">
+                            По вашему запросу, ничего не найдено...
+                        </h1>
+                    }
                 </div>
             </div>
         </main>
