@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import "../../Styles/header.scss"
+import "@/Styles/header.scss"
 import Logo from "./Logo/Logo";
 import Register from "./Register/Register";
 

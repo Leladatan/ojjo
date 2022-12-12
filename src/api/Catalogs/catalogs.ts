@@ -1,4 +1,4 @@
-import {IDataCatalogs} from "../../Interfaces/IDataCatalogs";
+import {IDataCatalogs} from "@/Interfaces/IDataCatalogs";
 
 export const dataCatalogs: IDataCatalogs[] = [
     {

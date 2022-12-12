@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import {Link} from "react-router-dom";
-import {IBlogs} from "../../Interfaces/IBlogs";
+import {IBlogs} from "@/Interfaces/IBlogs";
 
 interface Props {
     item: IBlogs;

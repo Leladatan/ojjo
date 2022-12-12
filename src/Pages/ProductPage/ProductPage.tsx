@@ -1,9 +1,9 @@
 import React, {FC, useEffect, useState} from 'react';
-import {IDataCatalogs} from "../../Interfaces/IDataCatalogs";
+import {IDataCatalogs} from "@/Interfaces/IDataCatalogs";
 import {useLocation} from "react-router-dom";
-import {dataCatalogs} from "../../api/Catalogs/catalogs";
-import "../../Styles/productPage.scss"
-import {format} from "../../Components/ProductCardCatalogs/ProductCardCatalogs";
+import {dataCatalogs} from "@/api/Catalogs/catalogs";
+import "@/Styles/productPage.scss"
+import {format} from "@/Components/ProductCardCatalogs/ProductCardCatalogs";
 
 const ProductPage: FC = ({}) => {
     const [item, setItem] = useState<IDataCatalogs | null>(null);

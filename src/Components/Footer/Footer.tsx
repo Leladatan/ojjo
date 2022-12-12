@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
-import visa from "../../Images/Footer/visa.png"
-import mastercard from "../../Images/Footer/mastercard.png"
-import "../../Styles/footer.scss"
+import visa from "@/Images/Footer/visa.png"
+import mastercard from "@/Images/Footer/mastercard.png"
+import "@/Styles/footer.scss"
 import {Link} from "react-router-dom";
 
 const Footer: FC = ({}) => {

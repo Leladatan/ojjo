@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
-import "../../Styles/blogsPage.scss"
-import {dataBlogs} from "../../api/Blogs/blogs";
-import BlogsCard from "../../Components/BlogsCard/BlogsCard";
+import "@/Styles/blogsPage.scss"
+import {dataBlogs} from "@/api/Blogs/blogs";
+import BlogsCard from "@/Components/BlogsCard/BlogsCard";
 
 const BlogsPage: FC = () => {
     return (

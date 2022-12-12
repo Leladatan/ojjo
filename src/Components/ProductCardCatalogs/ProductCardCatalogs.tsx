@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
-import {IDataCatalogs} from "../../Interfaces/IDataCatalogs";
-import "../../Styles/productCardCatalogs.scss"
+import {IDataCatalogs} from "@/Interfaces/IDataCatalogs";
+import "@/Styles/productCardCatalogs.scss"
 import {Link} from "react-router-dom";
 
 interface Props {

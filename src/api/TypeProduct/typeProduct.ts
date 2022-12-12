@@ -1,4 +1,4 @@
-import {ITypeProduct} from "../../Interfaces/ITypeProduct";
+import {ITypeProduct} from "@/Interfaces/ITypeProduct";
 
 export const typeProduct: ITypeProduct[] = [
     {

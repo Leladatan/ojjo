@@ -1,9 +1,9 @@
 import React, {FC, useEffect, useState} from 'react';
-import {dataCatalogs} from "../../api/Catalogs/catalogs";
-import ProductCardCatalogs from "../../Components/ProductCardCatalogs/ProductCardCatalogs";
-import "../../Styles/catalogPage.scss"
-import SearchCatalog from "../../Components/SearchCatalog/SearchCatalog";
-import {IDataCatalogs} from "../../Interfaces/IDataCatalogs";
+import {dataCatalogs} from "@/api/Catalogs/catalogs";
+import ProductCardCatalogs from "@/Components/ProductCardCatalogs/ProductCardCatalogs";
+import "@/Styles/catalogPage.scss"
+import SearchCatalog from "@/Components/SearchCatalog/SearchCatalog";
+import {IDataCatalogs} from "@/Interfaces/IDataCatalogs";
 
 const CatalogPage: FC = ({}) => {
     const [productList, setProductList] = useState<IDataCatalogs[]>([]);

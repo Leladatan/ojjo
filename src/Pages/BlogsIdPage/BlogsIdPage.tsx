@@ -1,8 +1,8 @@
 import React, {FC, useEffect, useState} from 'react';
 import {useLocation} from "react-router-dom";
-import {dataBlogs} from "../../api/Blogs/blogs";
-import {IBlogs} from "../../Interfaces/IBlogs";
-import "../../Styles/blogsIdPage.scss"
+import {dataBlogs} from "@/api/Blogs/blogs";
+import {IBlogs} from "@/Interfaces/IBlogs";
+import "@/Styles/blogsIdPage.scss"
 
 const BlogsIdPage: FC = () => {
     const [item, setItem] = useState<IBlogs | null>(null);
