@@ -8,12 +8,14 @@ import SortPrice from "@/Components/FilterCatalog/SortPrice/SortPrice";
 import FilterPrice from "@/Components/FilterCatalog/FilterPrice/FilterPrice";
 import FilterBrand from "@/Components/FilterCatalog/FilterBrand/FilterBrand";
 import FilterGender from "@/Components/FilterCatalog/FilterGender/FilterGender";
+import FIlterType from "@/Components/FilterCatalog/FilterType/FIlterType";
 
 const CatalogPage: FC = ({}) => {
     const [productList, setProductList] = useState<IDataCatalogs[]>([]);
     const [priceSort, setPriceSort] = useState<string>('');
     const [brand, setBrand] = useState<string>('');
     const [gender, setGender] = useState<string>('');
+    const [type, setType] = useState<string>('');
     const [priceFilterMin, setPriceFilterMin] = useState<number>(Math.min(...dataCatalogs.map(item => item.price)));
     const [priceFilterMax, setPriceFilterMax] = useState<number>(Math.max(...dataCatalogs.map(item => item.price)));
     const [search, setSearch] = useState<string>('');
@@ -24,6 +26,7 @@ const CatalogPage: FC = ({}) => {
                 item.title.toLowerCase().includes(search.toLowerCase()) &&
                 item.brand.includes(brand) &&
                 item.gender.includes(gender) &&
+                item.type.includes(type) &&
                 (item.price >= priceFilterMin && item.price <= priceFilterMax)
             );
         });
@@ -39,7 +42,7 @@ const CatalogPage: FC = ({}) => {
         }
 
         setProductList(result)
-    }, [search, priceSort, brand, gender, priceFilterMin, priceFilterMax]);
+    }, [search, priceSort, brand, gender, type, priceFilterMin, priceFilterMax]);
 
     return (
         <main className="main">
@@ -51,6 +54,7 @@ const CatalogPage: FC = ({}) => {
                                  setPriceFilterMax={setPriceFilterMax} setPriceFilterMin={setPriceFilterMin}/>
                     <FilterBrand brand={brand} setBrand={setBrand}/>
                     <FilterGender gender={gender} setGender={setGender}/>
+                    <FIlterType type={type} setType={setType}/>
                     {productList.length !== 0
                         ?
                         <div className="main__content__card">
