@@ -11,7 +11,7 @@ const FilterBrand: FC<Props> = ({brand, setBrand}) => {
         <div className="select__brand">
             <select
                 name="brand"
-                id="brand-select"
+                id="product-select"
                 value={brand}
                 onChange={(event) => {
                     setBrand(event.target.value);
