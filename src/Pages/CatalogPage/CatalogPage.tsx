@@ -9,6 +9,7 @@ import FilterPrice from "@/Components/FilterCatalog/FilterPrice/FilterPrice";
 import FilterBrand from "@/Components/FilterCatalog/FilterBrand/FilterBrand";
 import FilterGender from "@/Components/FilterCatalog/FilterGender/FilterGender";
 import FIlterType from "@/Components/FilterCatalog/FilterType/FIlterType";
+import FilterSeason from "@/Components/FilterCatalog/FilterSeason/FilterSeason";
 
 const CatalogPage: FC = ({}) => {
     const [productList, setProductList] = useState<IDataCatalogs[]>([]);
@@ -16,6 +17,8 @@ const CatalogPage: FC = ({}) => {
     const [brand, setBrand] = useState<string>('');
     const [gender, setGender] = useState<string>('');
     const [type, setType] = useState<string>('');
+    const [season, setSeason] = useState<string>('');
+    const [eventProduct, setEventProduct] = useState<string>('');
     const [priceFilterMin, setPriceFilterMin] = useState<number>(Math.min(...dataCatalogs.map(item => item.price)));
     const [priceFilterMax, setPriceFilterMax] = useState<number>(Math.max(...dataCatalogs.map(item => item.price)));
     const [search, setSearch] = useState<string>('');
@@ -27,6 +30,7 @@ const CatalogPage: FC = ({}) => {
                 item.brand.includes(brand) &&
                 item.gender.includes(gender) &&
                 item.type.includes(type) &&
+                item.season.includes(season) &&
                 (item.price >= priceFilterMin && item.price <= priceFilterMax)
             );
         });
@@ -42,7 +46,7 @@ const CatalogPage: FC = ({}) => {
         }
 
         setProductList(result)
-    }, [search, priceSort, brand, gender, type, priceFilterMin, priceFilterMax]);
+    }, [search, priceSort, brand, gender, type, season, priceFilterMin, priceFilterMax]);
 
     return (
         <main className="main">
@@ -55,6 +59,7 @@ const CatalogPage: FC = ({}) => {
                     <FilterBrand brand={brand} setBrand={setBrand}/>
                     <FilterGender gender={gender} setGender={setGender}/>
                     <FIlterType type={type} setType={setType}/>
+                    <FilterSeason season={season} setSeason={setSeason}/>
                     {productList.length !== 0
                         ?
                         <div className="main__content__card">
