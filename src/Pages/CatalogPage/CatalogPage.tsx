@@ -10,6 +10,7 @@ import FilterBrand from "@/Components/FilterCatalog/FilterBrand/FilterBrand";
 import FilterGender from "@/Components/FilterCatalog/FilterGender/FilterGender";
 import FIlterType from "@/Components/FilterCatalog/FilterType/FIlterType";
 import FilterSeason from "@/Components/FilterCatalog/FilterSeason/FilterSeason";
+import FilterEventProduct from "@/Components/FilterCatalog/FilterEventProduct/FilterEventProduct";
 
 const CatalogPage: FC = ({}) => {
     const [productList, setProductList] = useState<IDataCatalogs[]>([]);
@@ -31,6 +32,7 @@ const CatalogPage: FC = ({}) => {
                 item.gender.includes(gender) &&
                 item.type.includes(type) &&
                 item.season.includes(season) &&
+                item.event.includes(eventProduct) &&
                 (item.price >= priceFilterMin && item.price <= priceFilterMax)
             );
         });
@@ -46,7 +48,7 @@ const CatalogPage: FC = ({}) => {
         }
 
         setProductList(result)
-    }, [search, priceSort, brand, gender, type, season, priceFilterMin, priceFilterMax]);
+    }, [search, priceSort, brand, gender, type, season, eventProduct, priceFilterMin, priceFilterMax]);
 
     return (
         <main className="main">
@@ -60,6 +62,7 @@ const CatalogPage: FC = ({}) => {
                     <FilterGender gender={gender} setGender={setGender}/>
                     <FIlterType type={type} setType={setType}/>
                     <FilterSeason season={season} setSeason={setSeason}/>
+                    <FilterEventProduct eventProduct={eventProduct} setEventProduct={setEventProduct}/>
                     {productList.length !== 0
                         ?
                         <div className="main__content__card">

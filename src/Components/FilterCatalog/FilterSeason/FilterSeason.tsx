@@ -7,9 +7,9 @@ interface Props {
 
 const FilterSeason: FC<Props> = ({season, setSeason}) => {
     return (
-        <div className="select__type">
+        <div className="select__season">
             <select
-                name="type"
+                name="season"
                 id="product-select"
                 value={season}
                 onChange={(event) => {
