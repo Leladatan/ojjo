@@ -11,6 +11,7 @@ import FilterGender from "@/Components/FilterCatalog/FilterGender/FilterGender";
 import FIlterType from "@/Components/FilterCatalog/FilterType/FIlterType";
 import FilterSeason from "@/Components/FilterCatalog/FilterSeason/FilterSeason";
 import FilterEventProduct from "@/Components/FilterCatalog/FilterEventProduct/FilterEventProduct";
+import Reset from "@/Components/FilterCatalog/Reset/Reset";
 
 const CatalogPage: FC = ({}) => {
     const [productList, setProductList] = useState<IDataCatalogs[]>([]);
@@ -50,6 +51,18 @@ const CatalogPage: FC = ({}) => {
         setProductList(result)
     }, [search, priceSort, brand, gender, type, season, eventProduct, priceFilterMin, priceFilterMax]);
 
+    const handleReset = () => {
+        setPriceSort("")
+        setBrand("")
+        setGender("")
+        setType("")
+        setSeason("")
+        setEventProduct("")
+        setPriceFilterMin(Math.min(...dataCatalogs.map(item => item.price)))
+        setPriceFilterMax(Math.max(...dataCatalogs.map(item => item.price)))
+        setSearch("")
+    };
+
     return (
         <main className="main">
             <div className="container">
@@ -63,6 +76,7 @@ const CatalogPage: FC = ({}) => {
                     <FIlterType type={type} setType={setType}/>
                     <FilterSeason season={season} setSeason={setSeason}/>
                     <FilterEventProduct eventProduct={eventProduct} setEventProduct={setEventProduct}/>
+                    <Reset reset={handleReset}/>
                     {productList.length !== 0
                         ?
                         <div className="main__content__card">
