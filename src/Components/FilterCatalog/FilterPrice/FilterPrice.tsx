@@ -17,7 +17,7 @@ const FilterPrice: FC<Props> = ({priceFilterMin, setPriceFilterMin, priceFilterM
     return (
         <div className="select__filter-price">
             <div className="min">
-                <label className="select_year__inputs__text" htmlFor="minPrice">{priceFilterMin}</label>
+                <label className="select__filter-price__inputs__text" htmlFor="minPrice">{priceFilterMin}</label>
                 <input disabled={priceFilterMin > priceFilterMax} className="min-input" type="range"
                        id="minPrice" name="minPrice"
                        min={Math.min(...dataCatalogs.map(item => item.price))}
@@ -31,7 +31,7 @@ const FilterPrice: FC<Props> = ({priceFilterMin, setPriceFilterMin, priceFilterM
             </div>
 
             <div className="max">
-                <label className="select_year__inputs__text" htmlFor="maxPrice">{priceFilterMax}</label>
+                <label className="select__filter-price__inputs__text" htmlFor="maxPrice">{priceFilterMax}</label>
                 <input className="max-input" type="range" id="maxPrice" name="maxPrice"
                        min={Math.min(...dataCatalogs.map(item => item.price))}
                        max={Math.max(...dataCatalogs.map(item => item.price))}

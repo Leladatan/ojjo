@@ -6,10 +6,12 @@ import SearchCatalog from "@/Components/SearchCatalog/SearchCatalog";
 import {IDataCatalogs} from "@/Interfaces/IDataCatalogs";
 import SortPrice from "@/Components/FilterCatalog/SortPrice/SortPrice";
 import FilterPrice from "@/Components/FilterCatalog/FilterPrice/FilterPrice";
+import FilterBrand from "@/Components/FilterCatalog/FilterBrand/FilterBrand";
 
 const CatalogPage: FC = ({}) => {
     const [productList, setProductList] = useState<IDataCatalogs[]>([]);
     const [priceSort, setPriceSort] = useState<string>('');
+    const [brand, setBrand] = useState<string>('');
     const [priceFilterMin, setPriceFilterMin] = useState<number>(Math.min(...dataCatalogs.map(item => item.price)));
     const [priceFilterMax, setPriceFilterMax] = useState<number>(Math.max(...dataCatalogs.map(item => item.price)));
     const [search, setSearch] = useState<string>('');
@@ -18,6 +20,7 @@ const CatalogPage: FC = ({}) => {
         const result = dataCatalogs.filter((item) => {
             return (
                 item.title.toLowerCase().includes(search.toLowerCase()) &&
+                item.brand.includes(brand) &&
                 (item.price >= priceFilterMin && item.price <= priceFilterMax)
             );
         });
@@ -33,7 +36,7 @@ const CatalogPage: FC = ({}) => {
         }
 
         setProductList(result)
-    }, [search, priceSort, priceFilterMin, priceFilterMax]);
+    }, [search, priceSort, brand, priceFilterMin, priceFilterMax]);
 
     return (
         <main className="main">
@@ -43,6 +46,7 @@ const CatalogPage: FC = ({}) => {
                     <SortPrice priceSort={priceSort} setPriceSort={setPriceSort}/>
                     <FilterPrice priceFilterMax={priceFilterMax} priceFilterMin={priceFilterMin}
                                  setPriceFilterMax={setPriceFilterMax} setPriceFilterMin={setPriceFilterMin}/>
+                    <FilterBrand brand={brand} setBrand={setBrand}/>
                     {productList.length !== 0
                         ?
                         <div className="main__content__card">
