@@ -8,7 +8,7 @@ interface Props {
 
 const SearchCatalog: FC<Props> = ({search, setSearch}) => {
     return (
-        <>
+        <div className="search__input">
             <input type="text"
                    className="search-input"
                    value={search}
@@ -17,7 +17,7 @@ const SearchCatalog: FC<Props> = ({search, setSearch}) => {
                    }}
                    placeholder="Enter the desired decoration..."
             />
-        </>
+        </div>
     );
 };
 

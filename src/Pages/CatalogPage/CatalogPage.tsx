@@ -67,16 +67,20 @@ const CatalogPage: FC = ({}) => {
         <main className="main">
             <div className="container">
                 <div className="main__content_catalog">
-                    <SearchCatalog search={search} setSearch={setSearch}/>
-                    <SortPrice priceSort={priceSort} setPriceSort={setPriceSort}/>
-                    <FilterPrice priceFilterMax={priceFilterMax} priceFilterMin={priceFilterMin}
-                                 setPriceFilterMax={setPriceFilterMax} setPriceFilterMin={setPriceFilterMin}/>
-                    <FilterBrand brand={brand} setBrand={setBrand}/>
-                    <FilterGender gender={gender} setGender={setGender}/>
-                    <FIlterType type={type} setType={setType}/>
-                    <FilterSeason season={season} setSeason={setSeason}/>
-                    <FilterEventProduct eventProduct={eventProduct} setEventProduct={setEventProduct}/>
-                    <Reset reset={handleReset}/>
+                    <div className="search">
+                        <FilterPrice priceFilterMax={priceFilterMax} priceFilterMin={priceFilterMin}
+                                     setPriceFilterMax={setPriceFilterMax} setPriceFilterMin={setPriceFilterMin}/>
+                        <SearchCatalog search={search} setSearch={setSearch}/>
+                        <Reset reset={handleReset}/>
+                    </div>
+                    <div className="filter">
+                        <SortPrice priceSort={priceSort} setPriceSort={setPriceSort}/>
+                        <FilterBrand brand={brand} setBrand={setBrand}/>
+                        <FilterGender gender={gender} setGender={setGender}/>
+                        <FIlterType type={type} setType={setType}/>
+                        <FilterSeason season={season} setSeason={setSeason}/>
+                        <FilterEventProduct eventProduct={eventProduct} setEventProduct={setEventProduct}/>
+                    </div>
                     {productList.length !== 0
                         ?
                         <div className="main__content__card">

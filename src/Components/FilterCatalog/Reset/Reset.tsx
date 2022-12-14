@@ -1,4 +1,5 @@
 import React, {FC} from "react";
+import "@/Styles/reset.scss"
 
 interface Props {
     reset: () => void;
@@ -9,7 +10,7 @@ const Reset: FC<Props> = ({reset}) => {
         <div className="reset">
             <button className="reset__btn"
                     onClick={reset}>
-                Reset
+                Сбросить
             </button>
         </div>
     );

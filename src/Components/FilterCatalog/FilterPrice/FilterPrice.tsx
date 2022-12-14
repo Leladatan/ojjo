@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import {dataCatalogs} from "@/api/Catalogs/catalogs";
+import "@/Styles/filterPrice.scss"
 
 interface Props {
     priceFilterMin: number;
