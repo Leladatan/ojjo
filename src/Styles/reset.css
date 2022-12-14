@@ -6,6 +6,7 @@
   font-family: "PT Sans", sans-serif;
   background-color: #fff;
   transition: all 0.3s ease-in-out;
+  height: 40px;
 }
 .reset__btn:hover {
   background-color: #d9d9d9;
