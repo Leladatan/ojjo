@@ -51,17 +51,17 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 950px) {
   .search {
     flex-direction: column;
+  }
+  .filter {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (max-width: 750px) {
   .main__content__card {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .filter {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (max-width: 475px) {
