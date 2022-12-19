@@ -1,0 +1,49 @@
+.header__menu {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 60;
+}
+.header__menu__burger {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  width: 15px;
+  height: 2px;
+  border-radius: 20px;
+}
+.header__menu__burger:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-top: 2px;
+  top: -10px;
+  left: 0;
+}
+.header__menu__burger:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-top: 2px;
+  top: 6px;
+  left: 0;
+}
+
+@media screen and (max-width: 426px) {
+  .header__menu {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=HeaderMenu.css.map */

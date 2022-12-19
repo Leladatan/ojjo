@@ -1,11 +1,15 @@
 import React, {FC} from 'react';
 import {Link} from "react-router-dom";
 
-const Logo: FC = ({}) => {
+interface Props {
+    handlerMenuTarget: any;
+}
+
+const Logo: FC<Props> = ({handlerMenuTarget}) => {
     return (
         <div className="header__logo">
 
-            <Link to="/" className="header__logo_link">
+            <Link to="/" className="header__logo_link" onClick={handlerMenuTarget}>
 
                 <svg className="header__logo_svg" width="210" height="50" viewBox="0 0 216 52"
                      xmlns="http://www.w3.org/2000/svg">
