@@ -15,7 +15,7 @@ const HeaderMenu: FC<Props> = ({isOpen, setIsOpen}) => {
     return (
         <>
             <div className="header__menu" onClick={handlerMenu}>
-                <span className="header__menu__burger"></span>
+                <span className={isOpen ? "header__menu__burger__active" : "header__menu__burger"}></span>
             </div>
         </>
     );
